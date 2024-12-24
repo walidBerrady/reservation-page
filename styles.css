@@ -1,0 +1,215 @@
+/* Styles for the page */
+.reservation-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.rooms {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.room {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.room img {
+    width: 150px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.room-details {
+    flex-grow: 1;
+}
+
+.room h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+.room ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.room ul li {
+    margin-bottom: 5px;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+}
+
+.price-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.price-option button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.price-option button:hover {
+    background-color: #0056b3;
+}
+
+.cart {
+    margin-top: 20px;
+}
+
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.cart table, .cart th, .cart td {
+    border: 1px solid #ddd;
+}
+
+.cart th, .cart td {
+    text-align: left;
+    padding: 10px;
+}
+
+.cart th {
+    background-color: #f4f4f4;
+}
+
+.total {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.remove-btn {
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #cc0000;
+}
+
+.reserve-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.reserve-btn:hover {
+    background-color: #218838;
+}
+
+.date-picker-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.date-picker-container input, .date-picker-container select {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 48%;
+}
+
+.date-picker-container label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.modal-content {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
